@@ -11395,6 +11395,17 @@ p {
   margin-top: 20px;
   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1300 - 300)));
 }
+/* Center the third card */
+@media (min-width: 768px) {
+  .col-md-6.mx-auto {
+      display: flex;
+      justify-content: center;
+  }
+
+  .col-md-6.mx-auto .testimonial-card {
+      max-width: 600px; /* or any desired width */
+  }
+}
 
 /* blog wrapper
 .blog-card {
