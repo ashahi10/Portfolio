@@ -11227,7 +11227,7 @@ p {
 }
 
 .portfolio-card:hover .portfolio-card-overlay {
-  opacity: 1;
+  opacity: 3;
   visibility: visible;
   width: 100%;
   height: 100%;
@@ -11241,6 +11241,11 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+
+/* Margin for the second row */
+.row .col-md-4:nth-child(n+4) {
+  margin-top: 50px; /* Adjust the value as needed */
 }
 
 @media (max-width: 767.98px) {
@@ -12186,6 +12191,7 @@ pre .code {
   min-width: 400px;
   max-width: 400px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .about-img-holder .about-img {
@@ -12304,4 +12310,101 @@ pre .code {
 .skill-bar .progress div {
   height: 100%;
   border-radius: 4px;
+}
+
+
+/* About Image Styling */
+.about-img-holder img {
+  max-width: 70%; /* Adjust the size for better alignment */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1rem; /* Maintain consistent font size */
+  line-height: 1.6; /* Improve readability */
+  text-align: justify; /* Justify the text for balanced alignment */
+  margin-top: 10px;
+}
+/* Section Title */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left; /* Ensures alignment matches */
+ 
+}
+
+/* Horizontal Line */
+hr {
+  border: 0;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 20px 0;
+}
+
+/* Work Experience and Education Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  background: #ffffff;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.card ul {
+  list-style-type: disc;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-left: 0; /* Remove the default indentation */
+  padding-left: 0; /* Align with the card title */
+}
+.card-body li {
+  margin-left: 20px; /* Slight left margin for bullet alignment */
+}
+
+/* Education Styling */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.adjust-btn {
+  margin-top: 5px;
+}
+/* Button Styling */
+.btn-rounded {
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+
+/* Education Section Title Adjustment */
+#about .section-title.mt-5 {
+  margin-top: 20px; /* Reduce the top margin to decrease the space */
+}
+
+
+
+.education-logo {
+  width: 50px; /* Set the logo width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add space between logo and text */
+  vertical-align: middle; /* Align with the text */
+  background-color: white; /* Add a white background to hide the checkerboard */
+  border-radius: 5px; /* Smooth edges for a cleaner look */
+  padding: 2px; /* Add some padding if needed */
 }
